@@ -43,7 +43,8 @@ Enter the interest rate: 5
 Enter time in years: 10
 Total amount after 10 years is: 1628.89
 ```
-##🇬🇧 Description (English)
+##🇬🇧 Description (English)##
+
 This project is a simple Python script for calculating the final value of an investment with a given interest rate and investment period.
 
 ##How it works?
