@@ -1,94 +1,194 @@
-# calculaltor-for-compund-interest
 
-# Kalkulator procentu składanego / Compound Interest Calculator  
+### 🇬🇧English
 
-## 🇵🇱 Opis (Polski)
+### Simple Compound Interest Calculator 
 
-Ten projekt to prosty skrypt w Pythonie do obliczania wartości końcowej kapitału przy zadanej stopie procentowej i okresie inwestycji.  
+This repository contains a simple Python script for calculating compound interest.
 
-### Jak działa?
+Ten plik Readme jest również dostępny w języku polskim poniżej.
 
-Program pobiera od użytkownika trzy wartości:  
-1. **Kapitał początkowy (principal)** – kwota, od której liczone są odsetki.  
-2. **Stopa procentowa (rate)** – roczna stopa procentowa w %.  
-3. **Czas (time)** – okres inwestycji w latach.  
+---
+### Simple Compound Interest Calculator
 
-Na tej podstawie oblicza końcową kwotę według wzoru na procent składany:  
+This Python script calculates the future value of an investment using the compound interest formula. It's a straightforward tool for anyone looking to see how their money can grow over time.
 
-\[
-A = P \times \left(1 + \frac{r}{100}\right)^t
-\]
+#### Features
 
-gdzie:  
-- \( A \) – końcowa wartość inwestycji,  
-- \( P \) – kapitał początkowy,  
-- \( r \) – stopa procentowa,  
-- \( t \) – liczba lat.  
+* **User-friendly input:** The program prompts you to enter the principal amount, annual interest rate, and the number of years.
 
-### Uruchomienie
+* **Input validation:** It ensures that all entered values are greater than zero, preventing incorrect calculations.
 
-1. Zainstaluj **Python 3**.  
-2. Pobierz plik `main.py`.  
-3. W terminalu wpisz:  
+* **Accurate calculation:** It uses the standard compound interest formula to determine the final amount.
 
-```bash
-python main.py
-```
-Wprowadź kolejno wymagane wartości.
+* **Formatted output:** The final amount is displayed clearly, rounded to two decimal places.
 
-Przykład działania
-```yaml
-Enter principal amount: 1000
-Enter the interest rate: 5
-Enter time in years: 10
-Total amount after 10 years is: 1628.89
-```
-###🇬🇧 Description (English)
+#### How to Run
 
-This project is a simple Python script for calculating the final value of an investment with a given interest rate and investment period.
+1.  Ensure you have **Python 3** installed on your system.
 
-##How it works?
-The program asks the user to enter three values:
+2.  Save the code as `main.py`.
 
-Principal – the initial amount of money.
+3.  Open your terminal or command prompt.
 
-**1. Rate – annual interest rate in %.**
+4.  Navigate to the directory where the file is saved.
 
-**2. Time – investment period in years.**
+5.  Run the script using the following command:
 
-**3It then calculates the final amount using the compound interest formula:**
-\[
-𝐴=𝑃×(1+𝑟100)𝑡A=P×(1+ 100r)^t
- 
+    ```bash
+    python main.py
+    ```
+
+6.  Follow the on-screen prompts to enter your values.
+
+#### Code Explanation
+
+The script prompts the user for three values:
+
+* `principal`: The initial amount of money invested.
+
+* `rate`: The annual interest rate.
+
+* `time`: The number of years the money is invested.
+
+It then uses a `while` loop to validate that each input is a positive number. If the user enters a non-positive value, it displays an error message and asks for the input again.
+
+Finally, it calculates the total amount using the formula:
+
+$$A = P(1 + r/100)^t$$
+
 where:
 
-𝐴
-A – final value of the investment,
+* `A` = the future value of the investment
 
-𝑃
-P – principal,
+* `P` = the principal amount
 
-𝑟
-r – interest rate,
+* `r` = the annual interest rate
 
-𝑡
-t – number of years.
+* `t` = the number of years
 
-Run
-Install Python 3.
+The result is then printed to the console, formatted to two decimal places.
 
-Download the main.py file.
+### 🇵🇱polish
 
-In the terminal, run:
-```bash
-python main.py
-```
-Enter the requested values.
+---
+### Prosty Kalkulator Odsetek Składanych
 
-Example run
-```yaml
-Enter principal amount: 1000
-Enter the interest rate: 5
-Enter time in years: 10
-Total amount after 10 years is: 1628.89
-```
+Ten skrypt w Pythonie oblicza przyszłą wartość inwestycji, używając wzoru na odsetki składane. Jest to proste narzędzie dla każdego, kto chce sprawdzić, jak jego pieniądze mogą rosnąć w czasie.
+
+#### Funkcje
+
+* **Łatwe wprowadzanie danych:** Program prosi o wprowadzenie kwoty początkowej (kapitału), rocznej stopy procentowej i liczby lat.
+
+* **Walidacja danych:** Skrypt upewnia się, że wszystkie wprowadzone wartości są większe od zera, co zapobiega błędnym obliczeniom.
+
+* **Precyzyjne obliczenia:** Używa standardowego wzoru na odsetki składane do określenia końcowej kwoty.
+
+* **Sformatowany wynik:** Końcowa kwota jest wyświetlana w przejrzysty sposób, zaokrąglona do dwóch miejsc po przecinku.
+
+#### Jak uruchomić
+
+1.  Upewnij się, że masz zainstalowany **Python 3**.
+
+2.  Zapisz kod jako `main.py`.
+
+3.  Otwórz terminal lub wiersz poleceń.
+
+4.  Przejdź do katalogu, w którym zapisałeś plik.
+
+5.  Uruchom skrypt za pomocą następującego polecenia:
+
+    ```bash
+    python main.py
+    ```
+
+6.  Postępuj zgodnie z instrukcjami wyświetlanymi na ekranie, aby wprowadzić swoje wartości.
+
+#### Wyjaśnienie kodu
+
+Skrypt prosi użytkownika o trzy wartości:
+
+* `principal`: Początkowa kwota zainwestowanych pieniędzy.
+
+* `rate`: Roczna stopa procentowa.
+
+* `time`: Liczba lat, na które pieniądze są inwestowane.
+
+Następnie używa pętli `while` do walidacji, aby upewnić się, że każda wartość jest liczbą dodatnią. Jeśli użytkownik wprowadzi wartość ujemną lub równą zero, skrypt wyświetli komunikat o błędzie i poprosi o ponowne wprowadzenie danych.
+
+Na koniec oblicza całkowitą kwotę za pomocą wzoru:
+
+$$A = P(1 + r/100)^t$$
+
+gdzie:
+
+* `A` = przyszła wartość inwestycji
+
+* `P` = kwota początkowa (kapitał)
+
+* `r` = roczna stopa procentowa
+
+* `t` = liczba lat
+
+Wynik jest następnie drukowany na konsoli, sformatowany do dwóch miejsc po przecinku.
+
+
+
+### Simple Compound Interest Calculator
+
+This Python script calculates the future value of an investment using the compound interest formula. It's a straightforward tool for anyone looking to see how their money can grow over time.
+
+#### Features
+
+* **User-friendly input:** The program prompts you to enter the principal amount, annual interest rate, and the number of years.
+
+* **Input validation:** It ensures that all entered values are greater than zero, preventing incorrect calculations.
+
+* **Accurate calculation:** It uses the standard compound interest formula to determine the final amount.
+
+* **Formatted output:** The final amount is displayed clearly, rounded to two decimal places.
+
+#### How to Run
+
+1.  Ensure you have **Python 3** installed on your system.
+
+2.  Save the code as `main.py`.
+
+3.  Open your terminal or command prompt.
+
+4.  Navigate to the directory where the file is saved.
+
+5.  Run the script using the following command:
+
+    ```bash
+    python main.py
+    ```
+
+6.  Follow the on-screen prompts to enter your values.
+
+#### Code Explanation
+
+The script prompts the user for three values:
+
+* `principal`: The initial amount of money invested.
+
+* `rate`: The annual interest rate.
+
+* `time`: The number of years the money is invested.
+
+It then uses a `while` loop to validate that each input is a positive number. If the user enters a non-positive value, it displays an error message and asks for the input again.
+
+Finally, it calculates the total amount using the formula:
+
+$$A = P(1 + r/100)^t$$
+
+where:
+
+* `A` = the future value of the investment
+
+* `P` = the principal amount
+
+* `r` = the annual interest rate
+
+* `t` = the number of years
+
+The result is then printed to the console, formatted to two decimal places.
