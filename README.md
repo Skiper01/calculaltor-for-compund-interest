@@ -33,6 +33,7 @@ gdzie:
 
 ```bash
 python main.py
+```
 Wprowadź kolejno wymagane wartości.
 
 Przykład działania
