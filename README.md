@@ -37,17 +37,18 @@ python main.py
 Wprowadź kolejno wymagane wartości.
 
 Przykład działania
-yaml
+```yaml
 Copy
 Edit
 Enter principal amount: 1000
 Enter the interest rate: 5
 Enter time in years: 10
 Total amount after 10 years is: 1628.89
+```
 🇬🇧 Description (English)
 This project is a simple Python script for calculating the final value of an investment with a given interest rate and investment period.
 
-How it works?
+##How it works?
 The program asks the user to enter three values:
 
 Principal – the initial amount of money.
