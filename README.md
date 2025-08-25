@@ -38,14 +38,12 @@ Wprowadź kolejno wymagane wartości.
 
 Przykład działania
 ```yaml
-Copy
-Edit
 Enter principal amount: 1000
 Enter the interest rate: 5
 Enter time in years: 10
 Total amount after 10 years is: 1628.89
 ```
-🇬🇧 Description (English)
+##🇬🇧 Description (English)
 This project is a simple Python script for calculating the final value of an investment with a given interest rate and investment period.
 
 ##How it works?
@@ -53,29 +51,13 @@ The program asks the user to enter three values:
 
 Principal – the initial amount of money.
 
-Rate – annual interest rate in %.
+**1. Rate – annual interest rate in %.**
 
-Time – investment period in years.
+**2. Time – investment period in years.**
 
-It then calculates the final amount using the compound interest formula:
-
-𝐴
-=
-𝑃
-×
-(
-1
-+
-𝑟
-100
-)
-𝑡
-A=P×(1+ 
-100
-r
-​
- ) 
-t
+**3It then calculates the final amount using the compound interest formula:**
+\[
+𝐴=𝑃×(1+𝑟100)𝑡A=P×(1+ 100r)^t
  
 where:
 
@@ -97,18 +79,15 @@ Install Python 3.
 Download the main.py file.
 
 In the terminal, run:
-
-bash
-Copy
-Edit
+```bash
 python main.py
+```
 Enter the requested values.
 
 Example run
-yaml
-Copy
-Edit
+```yaml
 Enter principal amount: 1000
 Enter the interest rate: 5
 Enter time in years: 10
 Total amount after 10 years is: 1628.89
+```
